@@ -5,7 +5,7 @@
     filename: './public/bundle.js'
   },
   resolve: {
-    root: __dirname,
+    modules:[__dirname,'node_modules'] ,
     alias: {
       Main: 'app/components/Main.jsx',
       Nav: 'app/components/Nav.jsx',
@@ -17,7 +17,7 @@
       WeatherMessage: 'app/components/WeatherMessage.jsx',
       openWeatherMap: 'app/api/openWeatherMap.jsx'
     },
-    extensions: ['', '.js', '.jsx']
+    extensions: [' ', '.js', '.jsx']
   },
   module: {
     loaders: [
